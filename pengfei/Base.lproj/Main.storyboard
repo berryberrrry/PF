@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pengfei" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-ys-HBu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbg-J1-vqv">
+                                        <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.27450980390000002" green="0.5568627451" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="i8X-jP-l2d"/>
+                                            <constraint firstAttribute="width" constant="46" id="wdb-0c-JKN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOO-oe-23r">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bbg-J1-vqv" firstAttribute="centerX" secondItem="Sg4-ys-HBu" secondAttribute="centerX" id="FjC-Qu-ISb"/>
+                                    <constraint firstItem="nOO-oe-23r" firstAttribute="height" secondItem="Sg4-ys-HBu" secondAttribute="height" id="SXz-AO-MUc"/>
+                                    <constraint firstItem="nOO-oe-23r" firstAttribute="centerX" secondItem="Sg4-ys-HBu" secondAttribute="centerX" id="cif-kd-TZU"/>
+                                    <constraint firstItem="Bbg-J1-vqv" firstAttribute="centerY" secondItem="Sg4-ys-HBu" secondAttribute="centerY" id="h0m-RX-y4W"/>
+                                    <constraint firstItem="nOO-oe-23r" firstAttribute="centerY" secondItem="Sg4-ys-HBu" secondAttribute="centerY" id="jVk-Rm-I25"/>
+                                    <constraint firstItem="nOO-oe-23r" firstAttribute="width" secondItem="Sg4-ys-HBu" secondAttribute="width" id="lZm-IB-Wcd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sg4-ys-HBu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Blo-hE-seB"/>
+                            <constraint firstItem="Sg4-ys-HBu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="KGM-lB-405"/>
+                            <constraint firstItem="Sg4-ys-HBu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i1m-8i-VgQ"/>
+                            <constraint firstItem="Sg4-ys-HBu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kfb-9I-zJb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="nOO-oe-23r" id="Fcq-5z-Sy2"/>
+                        <outlet property="button" destination="Bbg-J1-vqv" id="bnq-Lx-MTs"/>
+                        <outlet property="whiteview" destination="Sg4-ys-HBu" id="GQE-BO-ZcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
